@@ -1,46 +1,45 @@
 .header{
     position: fixed;
     width: 100%;
-}
-.header {
-    background-color: white;
+    background-color: #FFFFFF;
+
     .container{
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    &__logo{
-        padding: 20px;
+    *{
         list-style: none;
-    }
-}
-
-.nav{
-    &__list{
-        display: flex;
-        align-items: center;
-        list-style: none;
-    }
-
-    &__item + &__item{
-        padding-left: 33px;
-        list-style: none;
-    }
-
-    &__link{
-        color: dimgray;
-        font-family: "Barlow";
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 15px;
         text-decoration: none;
 
-        &:hover{
+        &::selection{
             color: black;
-            text-decoration: underline;
+            background-color: aqua;
         }
     }
 
+    .nav__list{
+        display: flex;
+        list-style: none;
+    }
 
+    .nav__item{
+        padding-left: 42px;
+    }
+
+    .nav__link{
+    color: #333136;
+    font-family: Jost;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    transition: all 0.5s ease-in-out;
+    }
+
+    .nav__link:hover{
+        text-decoration: underline;
+        color: orange;
+    }
 }
